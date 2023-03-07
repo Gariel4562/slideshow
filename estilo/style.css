@@ -1,6 +1,14 @@
+* {
+    margin:0;
+    padding:0;
+}
+
 .container-slide {
-    max-width:700px;
-    height:300px;
+    display: flex;
+    justify-content: space-between;
+    max-width:50vw;
+    height:50vh;
+    background-color: black;
     border-radius: 10px;
     border: 5px solid black;
     color:black;
@@ -8,4 +16,27 @@
     margin-top:150px;
     box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.212), 0 5px 5px rgba(0, 0, 0, 0.212), 5px 5px 5px rgba(0, 0, 0, 0.216); /*Sombra em três lados da div */
 
+}
+
+.container-items {
+    position: absolute;
+    display: flex;
+    width:50vw;
+    height:50vh;
+    border-radius: 10px;
+}
+
+.item {
+    width: 50vw;
+    height: 50vh;
+}
+
+.item img {
+    width:50vw;
+    height:50vh;
+}
+
+.action-button {
+    font: bold 30px sans-serif;
+    z-index: 1;
 }
