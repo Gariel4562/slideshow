@@ -34,9 +34,23 @@
 .item img {
     width:50vw;
     height:50vh;
+    border-radius:10px;
 }
 
 .action-button {
     font: bold 30px sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:50px;
+    color:#00000000;
+    user-select: none;
     z-index: 1;
+}
+.action-button:hover {
+   color:white;
+   background-image: linear-gradient(to right, transparent, red, transparent);
+   border-radius: 10px;
+   cursor: pointer;
+   transition: all 1s;
 }
