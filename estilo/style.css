@@ -16,6 +16,7 @@
     margin-top:150px;
     box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.212), 0 5px 5px rgba(0, 0, 0, 0.212), 5px 5px 5px rgba(0, 0, 0, 0.216); /*Sombra em três lados da div */
 
+
 }
 
 .container-items {
@@ -24,11 +25,18 @@
     width:50vw;
     height:50vh;
     border-radius: 10px;
+    transition: all 1s;
+    
 }
 
 .item {
     width: 50vw;
     height: 50vh;
+    
+}
+
+.item:first-child {
+   margin-left: -100%;
 }
 
 .item img {
