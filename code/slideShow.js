@@ -13,7 +13,7 @@ const images = [
 
 // Div que receberá as imagens v 
 
-const container = document.getElementById(`container-items`);
+const containerItems = document.getElementById(`container-items`);
 
 
 
@@ -30,4 +30,22 @@ const loadImages = (images, container) => {
    } )
 }
 
-loadImages( images, container );
+
+
+loadImages( images, containerItems );
+
+// pegando todos os items v
+
+let items = document.querySelectorAll(`.item`);
+
+// enviando items para o Final
+
+const previous = () => {
+   containerItems.appendChild(items[0]);
+   items = document.querySelectorAll(`.item`);
+
+}
+
+// Quando clicar no 'previous' a foto vai para o final da lista.
+
+document.querySelector(`#previous`).addEventListener(`click`, previous);
