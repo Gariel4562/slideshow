@@ -1,6 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Rubik+Pixels&display=swap');
+
 * {
     margin:0;
     padding:0;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.218);
+}
+
+header h1 {
+    text-align: center;
+    color:black;
+    font-size: 2em;
+    font-family: 'Noto Sans JP', sans-serif;
+    background-image: linear-gradient(to right, transparent, red, transparent, red);
 }
 
 .container-slide {
@@ -25,6 +39,7 @@
     width:50vw;
     height:50vh;
     border-radius: 10px;
+    overflow: hidden;
     
 }
 
@@ -61,4 +76,25 @@
    border-radius: 10px;
    cursor: pointer;
    transition: all 1s;
+}
+
+footer {
+    text-align: center;
+    margin-top:100px;
+    background-image: linear-gradient(to right, transparent, red, transparent, red);
+    height:80px;
+    line-height:80px;
+    color:black;
+
+    
+}
+
+footer p a {
+    text-decoration: none;
+    color:black;
+}
+
+a:hover {
+    text-decoration: underline;
+    color:black;
 }

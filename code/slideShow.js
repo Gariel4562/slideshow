@@ -38,14 +38,20 @@ loadImages( images, containerItems );
 
 let items = document.querySelectorAll(`.item`);
 
-// enviando items para o Final
-
 const previous = () => {
    containerItems.appendChild(items[0]);
    items = document.querySelectorAll(`.item`);
 
 }
 
-// Quando clicar no 'previous' a foto vai para o final da lista.
+const next = () => {
+   const lastItem = items[items.length - 1 ];
+   containerItems.insertBefore( lastItem, items[0]);
+   items = document.querySelectorAll(`.item`);
+}
+
+// Quando clicar realizará as funções 'previous' ou 'next' que está logo acima.
 
 document.querySelector(`#previous`).addEventListener(`click`, previous);
+document.querySelector(`#next`).addEventListener(`click`, next);
+
