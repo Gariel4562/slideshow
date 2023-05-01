@@ -7,7 +7,7 @@ const images = [
     { 'id': '2', 'url':'./img/samurai02.jpg' },
     { 'id': '3', 'url':'./img/blood03.jpg' },
     { 'id': '4', 'url':'./img/samurai04.webp' },
-    { 'id': '5', 'url':'./img/Ashita-no-Joe05.jpg' },
+    { 'id': '5', 'url':'./img/ashitanojoe05.jpg' },
 ]
 
 
